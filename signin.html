@@ -1,0 +1,39 @@
+<!DOCTYPE html>  
+    <html lang="en">  
+    <head>  
+        <meta charset="UTF-8">  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>Sign In</title>  
+        <script src="https://cdn.tailwindcss.com"></script>  
+        <style>  
+            body {  
+                background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);  
+            }  
+        </style>  
+    </head>  
+    <body class="flex items-center justify-center min-h-screen">  
+        <div class="bg-white p-10 rounded-lg shadow-lg w-96">  
+            <h2 class="text-4xl font-bold mb-6 text-center text-gray-800">Welcome Back</h2>  
+            <p class="text-center text-gray-600 mb-4">Please sign in to your account</p>  
+            <form>  
+                <div class="mb-4">  
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>  
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500 transition duration-200" />  
+                </div>  
+                <div class="mb-4">  
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>  
+                    <input type="password" id="password" name="password" required class="mt-1 block w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500 transition duration-200" />  
+                </div>  
+                <button type="submit" class="w-full bg-blue-700 text-white p-3 rounded-md hover:bg-blue-800 transition duration-200">Sign In</button>  
+            </form>  
+            <div class="flex justify-between mt-4">  
+                <label class="flex items-center">  
+                    <input type="checkbox" class="mr-2" />  
+                    Remember Me  
+                </label>  
+                <a href="#" class="text-blue-600 hover:underline">Forgot Password?</a>  
+            </div>  
+            <p class="mt-6 text-center text-sm text-gray-600">Don't have an account? <a href="#" class="text-blue-600 hover:underline">Sign up</a></p>  
+        </div>  
+    </body>  
+    </html>
